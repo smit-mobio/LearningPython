@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Template New</title>
+
+    </head>
+    <body>
+        <h1><center>Welcome to my world!</center></h1>
+        <h3><u>Enter sentence/essaay whatever you want!</u></h3>
+        <form action='/analyz' method='post'> {% csrf_token %}
+            <textarea style="width: 562px; height: 117px;" name = 'text'></textarea><br><br>
+            <input type="checkbox" name = 'remove_punctuation'>Remove Punctuation<br>
+            <input type="checkbox" name = 'uppercase'>UPPER CASE<br>
+            <button type="submit" >Submit</button>&nbsp;
+            <button type="reset">Reset</button>
+            </form>
+    <body>
+</html>
